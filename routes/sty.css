@@ -1,0 +1,60 @@
+/* Default styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+.back {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-image: url("wepik-export-20230816150912RFqr.png");
+  background-size: cover;
+  background-position: center;
+  grid-template-columns: [first] 20% [line2] auto [line3] 20% [end];
+  grid-template-rows: [first] 25% [line2] auto [line3] 20% [end];
+}
+
+.from {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: transparent;
+}
+.from input[type="text"] {
+  background: transparent;
+  border-color: orange;
+}
+#button {
+  width: 8pc;
+  margin-left: 25pc;
+  color: orange;
+  margin-top: 5%;
+  border-color: orange;
+}
+#h1 {
+  color: orange;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .back {
+    grid-template-columns: [first] 10% [line2] auto [line3] 10% [end];
+    grid-template-rows: [first] 15% [line2] auto [line3] 15% [end];
+  }
+
+  .from {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

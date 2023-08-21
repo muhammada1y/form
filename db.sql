@@ -1,0 +1,9 @@
+CREATE DATABASE student;
+USE student;
+CREATE TABLE picnic (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    father_name VARCHAR(255) NOT NULL,
+    class VARCHAR(255) NOT NULL
+);
+

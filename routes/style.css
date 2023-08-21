@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.first {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-image: url("wepik-export-20230816150912RFqr.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  grid-template-columns: [first] 20% [line2] auto [line3] 20% [end];
+  grid-template-rows: [first] 40% [line2] auto [line3] 20% [end];
+}
+#h1 {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: orange;
+}
